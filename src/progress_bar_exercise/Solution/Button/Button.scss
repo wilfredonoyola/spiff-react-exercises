@@ -1,0 +1,38 @@
+@import "../.././../shared_styles/colors.scss";
+
+Button {
+  border-radius: 25px;
+  min-width: 160px;
+  padding: 14px 20px;
+
+  &:disabled {
+    color: $gray !important;
+    border: 1px solid $gray !important;
+  }
+
+  &.start-button {
+    color: $green;
+    border: 1px solid $green;
+
+    &:hover {
+      border: 2px solid $green;
+    }
+
+    &:active {
+      border: 3px solid $green;
+    }
+  }
+
+  &.finish-button {
+    color: $red;
+    border: 1px solid $red;
+
+    &:hover {
+      border: 2px solid $red;
+    }
+
+    &:active {
+      border: 3px solid $red;
+    }
+  }
+}
