@@ -36,9 +36,10 @@ const Solution = () => {
       currentProgress = (time * 10 )  / totalTime;
       setProgress(currentProgress);
       setLoading(true);
+      
      if(currentProgress === 90){
         setLoading(false);
-        clearInterval(_timer)
+        clearInterval(_timer);
       } 
   
     }, 100);
