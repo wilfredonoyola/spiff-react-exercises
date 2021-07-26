@@ -2,9 +2,9 @@ import './Button.scss';
 
 import React from 'react';
 
-const Button = ({ isLoading, ...props })  => {
+const Button = ({ className, isLoading, ...props })  => {
   return (
-    <button className={'upcase medium'} disabled={isLoading} {...props} />
+    <button className={className + ' upcase medium'} disabled={isLoading} {...props} />
   )
 };
 
