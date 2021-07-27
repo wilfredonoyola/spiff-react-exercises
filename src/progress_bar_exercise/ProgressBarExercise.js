@@ -50,7 +50,6 @@ const Solution = () => {
   
     // Get the values from input
     breakPoints = sanitizeInput(inputRef.current.value);
-    console.log(breakPoints);
 
     // Check if there are any breakpoints
     const isAvailableBreakPoints = breakPoints.length > 0;
