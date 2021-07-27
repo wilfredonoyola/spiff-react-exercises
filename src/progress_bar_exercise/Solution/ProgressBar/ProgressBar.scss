@@ -1,0 +1,33 @@
+@import "../.././../shared_styles/colors.scss";
+
+.container-progress-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 25px;
+  -webkit-transition: opacity 3s ease-in-out;
+  -moz-transition: opacity 3s ease-in-out;
+  -ms-transition: opacity 3s ease-in-out;
+  -o-transition: opacity 3s ease-in-out;
+  opacity: 1;
+
+  .container-default {
+    background-color: #e0e0de;
+    border-radius: 60px;
+    height: 6px;
+    width: 100%;
+  }
+
+  .container-filling {
+    background-color: $red;
+    height: 100%;
+    transition: width 1s linear;
+    background-image: linear-gradient(150deg, $red 0%, $sunset 80%);
+    border-radius: inherit;
+  }
+
+  &.hide-progressbar {
+    opacity: 0;
+  }
+}

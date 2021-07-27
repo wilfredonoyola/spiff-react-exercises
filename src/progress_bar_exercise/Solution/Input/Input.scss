@@ -1,0 +1,13 @@
+@import "../.././../shared_styles/colors.scss";
+
+Input {
+  border-radius: 25px;
+  padding: 14px 20px;
+  font-size: 18px;
+  border: 2px solid $gray;
+
+  &:disabled {
+    color: $gray !important;
+    border: 1px solid $gray !important;
+  }
+}
